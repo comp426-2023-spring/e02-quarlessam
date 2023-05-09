@@ -1,12 +1,45 @@
 <html>
-    <head>
-        <title>Rock</title>
-        <!-- Link to your script file(s) and CSS in here somewhere -->
-    </head>
-    <body>
-
-    <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
-
+	<head>
+		<title>lie</title>
+		<!-- Link to your script file(s) and CSS in here somewhere -->
+	</head>
+	<body>
+		<script type = "text/javascript" src="scripts.js"></script>
+		<div>
+		    <p>
+				Choose Game
+    		</p>
+    	</div>
+		<div>
+		    <button id="rps_button" onclick="rps_button()">
+				RPS
+    		</button>
+    		<button id="rpsls_button" onclick="rpsls_button()">
+				RPSLS
+    		</button>
+    	</div>
+    	<div>
+    		<p hidden id="opp_question">
+				Play with an opponent?
+    		</p>
+    	</div>
+    	<div>
+    		<button hidden id="opp_button" onclick="rps_fetch('app/rps')">
+				Yes
+    		</button>
+    		<button hidden id="no_opp_button" onclick="rps_fetch('app/rpsls')">
+				No
+    		</button>
+    	</div>
+    	<div>
+    		<p hidden id="result">
+    		<p>
+    		</p>
+		</div>
+		<div>
+    		<h4 id="endpoint">
+    			app
+    		</h4>
+		</div>
     </body>
 </html>
