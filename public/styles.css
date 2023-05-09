@@ -2,58 +2,66 @@ body {
 }
 
 #main_div {
-    background-color: lightgray;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
+	background-color: lightgray;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
 }
 
 #margins {
-    background-color: lightgray;
-    
-    padding: 0px 25px;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
+	background-color: lightgray;
+	
+	padding: 0px 25px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+}
+
+#rules_button {
+	background-color: darkgray;
+}
+
+#play_button {
+	font-weight: bold;
 }
 
 div {
-    margin: auto;
-    padding: 3px 3px;
-    display: block;
+	margin: auto;
+	padding: 3px 3px;
+	display: block;
 }
 
 button {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 h1 {
-  font-family: "Lucida Console", "Courier New", monospace;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 p {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 24px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 24px;
 }
 
 li {
-  font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 32px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 32px;
 }
