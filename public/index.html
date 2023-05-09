@@ -1,45 +1,88 @@
 <html>
 	<head>
-		<title>lie</title>
-		<!-- Link to your script file(s) and CSS in here somewhere -->
+		<title>RPS(LS)</title>
+		<script type = "text/javascript" src="scripts.js"></script>
+		<link rel = "stylesheet" href="styles.css"></link>
 	</head>
 	<body>
-		<script type = "text/javascript" src="scripts.js"></script>
-		<div>
-		    <p>
-				Choose Game
-    		</p>
-    	</div>
-		<div>
-		    <button id="rps_button" onclick="rps_button()">
-				RPS
-    		</button>
-    		<button id="rpsls_button" onclick="rpsls_button()">
-				RPSLS
-    		</button>
-    	</div>
-    	<div>
-    		<p hidden id="opp_question">
-				Play with an opponent?
-    		</p>
-    	</div>
-    	<div>
-    		<button hidden id="opp_button" onclick="rps_fetch('app/rps')">
-				Yes
-    		</button>
-    		<button hidden id="no_opp_button" onclick="rps_fetch('app/rpsls')">
-				No
-    		</button>
-    	</div>
-    	<div>
-    		<p hidden id="result">
-    		<p>
-    		</p>
+		<div id = "main_div">
+		<div id = "margins">
+			<div>
+			    <h1>
+					Rock, Paper, Scissors (with Lizard-Spock Expansion)
+    			</h1>
+    		</div>
+    		<div>
+			    <p>
+					Which game would you like to play?
+    			</p>
+    		</div>
+			<div>
+			    <button id="rps_button" onclick="rps_button()">
+					RPS
+    			</button>
+    			<button id="rpsls_button" onclick="rpsls_button()">
+					RPSLS
+    			</button>
+    			<button style="background-color:darkgray;" id="rules_button" onclick="rules_button()">
+					Rules
+    			</button>
+			</div>
+			<div>
+				<p hidden id="opp_question">
+					Play with an opponent?
+    			</p>
+    		</div>
+			<div>
+    			<button style="display:none;" id="opp_button" onclick="opp_button()">
+					Yes
+    			</button>
+    			<button style="display:none;" id="no_opp_button" onclick="no_opp_button()">
+					No
+    			</button>
+    		</div>
+			<div>
+    			<p hidden id="shot_question">
+					Choose your shot!
+    			</p>
+    		</div>
+    		<div>
+    			<button style="display:none;" id="rock_shot" onclick="rock_shot()">
+					Rock
+    			</button>
+    			<button style="display:none;" id="paper_shot" onclick="paper_shot()">
+					Paper
+    			</button>
+    			<button style="display:none;" id="scissors_shot" onclick="scissors_shot()">
+					Scissors
+    			</button>
+    			<button style="display:none;" id="lizard_shot" onclick="lizard_shot()">
+					Lizard
+    			</button>
+    			<button style="display:none;" id="spock_shot" onclick="spock_shot()">
+					Spock
+    			</button>
+    		</div>
+    		<div>
+    		</div>
+    		<div>
+    			<button style="display:none;font-weight:bold;" id="play_button" onclick="play()">
+					PLAY
+    			</button>
+    		</div>
+    		<div>
+    			<ul hidden id="result">
+    				<li id = "result_player">Player: </li>
+    				<li hidden id="result_opp">Opponent: </li>
+    				<li hidden id="result_result">Result: </li>
+    			</ul>
+			</div>
+			<div>
+    			<p hidden id="endpoint">
+    				app/
+    			</p>
+			</div>
 		</div>
-		<div>
-    		<h4 id="endpoint">
-    			app
-    		</h4>
 		</div>
     </body>
 </html>
