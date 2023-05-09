@@ -16,6 +16,7 @@ async function play() {
 		document.getElementById("result_result").textContent += json.result.toUpperCase()
 	}
 	document.getElementById("result").removeAttribute("hidden")
+	document.getElementById("reset_button").style.display = "inline-block"
 }
 
 function rps_button() {
